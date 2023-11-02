@@ -1,4 +1,8 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
+const circle = require('./');
+const triangle = require('./');
+const square = require('./');
 
 function promptUser() {
   return inquirer.prompt([
@@ -28,3 +32,23 @@ function promptUser() {
     },
   ]);
 }
+
+function generateLogo() {
+    promptUser().then(answers => {
+      const { text, textColor, shape, shapeColor } = answers;
+      let logo;
+  
+      switch (shape) {
+        case 'circle':
+          logo = new circle();
+          break;
+        case 'triangle':
+          logo = new triangle();
+          break;
+        case 'square':
+          logo = new square();
+          break;
+        default:
+          console.log('Invalid shape selection.');
+          return;
+      }
