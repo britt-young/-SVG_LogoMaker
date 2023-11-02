@@ -52,3 +52,7 @@ function generateLogo() {
           console.log('Invalid shape selection.');
           return;
       }
+
+      logo.setColor(shapeColor);
+      logo.setTextColor(textColor);
+      logo.setText(text);
