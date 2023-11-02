@@ -1,9 +1,12 @@
+//pull in necessary packages
 const inquirer = require('inquirer');
 const fs = require('fs');
+//set variables for shapes
 const circle = require('./');
 const triangle = require('./');
 const square = require('./');
 
+//use inquirer package to prompt user with logo criteria
 function promptUser() {
   return inquirer.prompt([
     {
@@ -33,11 +36,14 @@ function promptUser() {
   ]);
 }
 
+//create variable from uesr answers
+//initialize logo variable
 function generateLogo() {
     promptUser().then(answers => {
       const { text, textColor, shape, shapeColor } = answers;
       let logo;
   
+      //switch statement to set logo shape
       switch (shape) {
         case 'circle':
           logo = new circle();
@@ -53,9 +59,11 @@ function generateLogo() {
           return;
       }
 
+      //set logo criteria
       logo.setColor(shapeColor);
       logo.setTextColor(textColor);
       logo.setText(text);
 
+      //save new logo and render in specified file folder
       const svg = logo.render();
       const logoPath = './';
