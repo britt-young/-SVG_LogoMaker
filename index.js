@@ -67,3 +67,17 @@ function generateLogo() {
       //save new logo and render in specified file folder
       const svg = logo.render();
       const logoPath = './';
+
+      //write logo to file using fs
+      fs.writeFile(logoPath, svg, err => {
+        if (err) {
+          console.error('An error occurred while generating the logo:', err);
+        } else {
+          console.log('Generated logo.svg');
+        }
+      });
+    });
+  }
+  
+  //call generateLogo function
+  generateLogo();
