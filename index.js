@@ -56,3 +56,6 @@ function generateLogo() {
       logo.setColor(shapeColor);
       logo.setTextColor(textColor);
       logo.setText(text);
+
+      const svg = logo.render();
+      const logoPath = './';
