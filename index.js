@@ -2,9 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 //set variables for shapes
-const circle = require('./');
-const triangle = require('./');
-const square = require('./');
+const {Circle, Square, Triangle} = require("./lib/shapes")
 
 //use inquirer package to prompt user with logo criteria
 function promptUser() {
@@ -36,7 +34,7 @@ function promptUser() {
   ]);
 }
 
-//create variable from uesr answers
+//create variable from user answers
 //initialize logo variable
 function generateLogo() {
     promptUser().then(answers => {
@@ -46,13 +44,13 @@ function generateLogo() {
       //switch statement to set logo shape
       switch (shape) {
         case 'circle':
-          logo = new circle();
+          logo = new Circle();
           break;
         case 'triangle':
-          logo = new triangle();
+          logo = new Triangle();
           break;
         case 'square':
-          logo = new square();
+          logo = new Square();
           break;
         default:
           console.log('Invalid shape selection.');
