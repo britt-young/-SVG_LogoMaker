@@ -1,0 +1,3 @@
+# indicates files/ folders I want Git to ignore
+.DS_Store
+node_modules
