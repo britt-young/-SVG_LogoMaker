@@ -4,22 +4,6 @@ const fs = require('fs');
 //set variables for shapes
 const {Circle, Square, Triangle} = require("./lib/shapes")
 
-class Svg{
-  constructor(){
-    this.testElement =''
-    this.shapeElement = ''
-  }
-  render(){
-    return 'svg viewbox="0 0 300 200" xmls="https://www.w3.org/2000/svg"'
-  }
-  setTextElement(text,color){
-    this.testElement = '<text x="150" y="125" font-size="60" text-anchor="middle" fill="'
-  }
-  setShapeElement(shape){
-    this.shapeElement = shape.render()
-  }
-}
-
 //use inquirer package to prompt user with logo criteria
 function promptUser() {
   return inquirer.prompt([
