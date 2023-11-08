@@ -17,8 +17,13 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [License](#license)
 
 ## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+1. Clone the repository ()
+Install the following:
+* Node.JS Version 16.18.1
+* Jest Version 29.4.3
+* Inquirer.js: Version 8.2.4
+2. Open the cloned repository in any source code editor.
+3. Open the integrated terminal for the document and complete the respective 
 
 ## Usage
 
