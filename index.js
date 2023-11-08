@@ -4,6 +4,22 @@ const fs = require('fs');
 //set variables for shapes
 const {Circle, Square, Triangle} = require("./lib/shapes")
 
+class Svg{
+  constructor(){
+    this.testElement =''
+    this.shapeElement = ''
+  }
+  render(){
+    return 'svg viewbox="0 0 300 200" xmls="https://www.w3.org/2000/svg"'
+  }
+  setTextElement(text,color){
+    this.testElement = '<text x="150" y="125" font-size="60" text-anchor="middle" fill="'
+  }
+  setShapeElement(shape){
+    this.shapeElement = shape.render()
+  }
+}
+
 //use inquirer package to prompt user with logo criteria
 function promptUser() {
   return inquirer.prompt([
@@ -23,7 +39,7 @@ function promptUser() {
     {
       type: 'list',
       name: 'shape',
-      message: 'Choose a shape:',
+      message: 'Choose a shap e:',
       choices: ['Circle', 'Triangle', 'Square'],
     },
     {
@@ -43,13 +59,13 @@ function generateLogo() {
   
       //switch statement to set logo shape
       switch (shape) {
-        case 'circle':
+        case 'Circle':
           logo = new Circle();
           break;
-        case 'triangle':
+        case 'Triangle':
           logo = new Triangle();
           break;
-        case 'square':
+        case 'Square':
           logo = new Square();
           break;
         default:
@@ -64,7 +80,7 @@ function generateLogo() {
 
       //save new logo and render in specified file folder
       const svg = logo.render();
-      const logoPath = './';
+      const logoPath = "./examples/logo.svg";
 
       //write logo to file using fs
       fs.writeFile(logoPath, svg, err => {
