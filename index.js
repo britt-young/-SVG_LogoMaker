@@ -23,7 +23,7 @@ function promptUser() {
     {
       type: 'list',
       name: 'shape',
-      message: 'Choose a shap e:',
+      message: 'Choose a shape:',
       choices: ['Circle', 'Triangle', 'Square'],
     },
     {
