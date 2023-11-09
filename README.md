@@ -5,7 +5,6 @@ AS a freelance web developer
 I WANT to generate a simple logo for my projects using the CLI
 SO THAT I don't have to pay a graphic designer
 
-- What did you learn?
 
 ## Table of Contents:
 
