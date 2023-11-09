@@ -31,9 +31,8 @@ SO THAT I don't have to pay a graphic designer
 5. Once completed an SVG file named "logo.svg" will be created in the "examples" folder
 6. User may rename the "logo.svg" file to the file name of their choice
 
-
     ![MOCKUP LOGO](./examples/mockup.png)
-    
+
 
 ## Credits:
 
@@ -47,7 +46,7 @@ SO THAT I don't have to pay a graphic designer
 n/a
 
 ## Tests
-
+[APP DEMO VIDEO](https://drive.google.com/file/d/1PslQM5HTdn5VUKcjJuaDykKRxH6U-6_Z/view) 
 * Tests are conducted using Jest through the command "npm test" in the terminal
 * The shapes.test.js file can be found in the lib folder
 * Each shape has a specific test, for a total of 3 tests
