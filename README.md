@@ -17,17 +17,22 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [License](#license)
 
 ## Installation
-1. Clone the repository ()
-Install the following:
+1. Clone the repository: [https://github.com/britt-young/SVG_LogoMaker](https://github.com/britt-young/SVG_LogoMaker).
+2. Install the following:
 * Node.JS Version 16.18.1
 * Jest Version 29.4.3
 * Inquirer.js: Version 8.2.4
-2. Open the cloned repository in any source code editor.
-3. Open the integrated terminal for the document and complete the respective 
+3. Open the cloned repository in any source code editor
+4. Open the integrated terminal for the document and complete the installation guides provided in step 2
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+1. Open the cloned repository in any source code editor (e.g. Visual Studio Code)
+2. Open integrated terminalfrom the index.js file
+3. Enter the command “node index.js” in the command line interface/ terminal
+4. Through sequential order within the command line interface - the user will be presented with npm inquirer questions - the user will provide a response to each question and proceed
+5. Once completed an SVG file named "logo.svg" will be created in the "examples" folder
+6. User may rename the "logo.svg" file to the file name of their choice
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
@@ -40,6 +45,9 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 List your collaborators, if any, with links to their GitHub profiles.
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+[Node.js](https://nodejs.org/en/blog/release/v16.18.1/)
+[Jest](https://www.npmjs.com/package/jest)
+[Inquirer.js](https://www.npmjs.com/package/inquirer/v/8.2.4)
 
 If you followed tutorials, include links to those here as well.
 
