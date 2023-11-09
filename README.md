@@ -32,9 +32,8 @@ SO THAT I don't have to pay a graphic designer
 6. User may rename the "logo.svg" file to the file name of their choice
 
 
-    ```md
     ![MOCKUP LOGO](./examples/mockup.png)
-    ```
+    
 
 ## Credits:
 
