@@ -45,8 +45,8 @@ SO THAT I don't have to pay a graphic designer
 n/a
 
 ## Tests
-[APP DEMO VIDEO](https://drive.google.com/file/d/1PslQM5HTdn5VUKcjJuaDykKRxH6U-6_Z/view) 
+[APP DEMO VIDEO](https://drive.google.com/file/d/1Kllt85PjIqKmpoBMwOa0WYKZ1NmS4yBa/view) 
 * Tests are conducted using Jest through the command "npm test" in the terminal
 * The shapes.test.js file can be found in the lib folder
 * Each shape has a specific test, for a total of 3 tests
-* Test status: 1 PASS (square), 2 FAIL (circle, triangle)
+* Jest Test: 3 PASSED
